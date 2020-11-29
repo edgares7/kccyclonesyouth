@@ -42,35 +42,35 @@
             </button>
           </div>
           <nav class="hidden md:flex space-x-10">
-            <router-link to="">
+            <router-link to="/about">
               <span
                 class="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Our Story
               </span>
             </router-link>
-            <router-link to="">
+            <router-link to="/coaches">
               <span
                 class="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Meet the Coaches
               </span>
             </router-link>
-            <router-link to="">
+            <router-link to="/get-involved">
               <span
                 class="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Get Involved
               </span>
             </router-link>
-            <router-link to="">
+            <router-link to="/board">
               <span
                 class="text-base font-medium text-gray-500 hover:text-gray-900"
               >
                 Meet the Board
               </span>
             </router-link>
-            <router-link to="">
+            <router-link to="/foundation">
               <span
                 class="text-base font-medium text-gray-500 hover:text-gray-900"
               >
@@ -150,49 +150,49 @@
               </div>
               <div class="mt-6">
                 <nav class="grid gap-y-8">
-                  <a
-                    href="#"
+                  <router-link
+                    to="/about"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span class="ml-3 text-base font-medium text-gray-900">
                       Our Story
                     </span>
-                  </a>
+                  </router-link>
 
-                  <a
-                    href="#"
+                  <router-link
+                    to="/coaches"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span class="ml-3 text-base font-medium text-gray-900">
                       Meet the Coaches
                     </span>
-                  </a>
+                  </router-link>
 
-                  <a
-                    href="#"
+                  <router-link
+                    to="/get-involved"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span class="ml-3 text-base font-medium text-gray-900">
                       Get Involved
                     </span>
-                  </a>
+                  </router-link>
 
-                  <a
-                    href="#"
+                  <router-link
+                    to="/board"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span class="ml-3 text-base font-medium text-gray-900">
                       Met the Board
                     </span>
-                  </a>
-                  <a
-                    href="#"
+                  </router-link>
+                  <router-link
+                    to="/foundation"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                   >
                     <span class="ml-3 text-base font-medium text-gray-900">
                       About the Foundation
                     </span>
-                  </a>
+                  </router-link>
                   <router-link
                     to="/contact"
                     class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
