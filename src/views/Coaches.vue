@@ -7,7 +7,9 @@
         Meet the Coaches
       </h1>
     </div>
-    <div class="body grid grid-cols-2 gap-32">
+    <div
+      class="body grid sm:grid-cols-2 grid-cols-1 gap-10 md:gap-20 sm:gap-32"
+    >
       <router-link to="/coaches/jeff">
         <Card
           :image="'jeff.jpg'"
