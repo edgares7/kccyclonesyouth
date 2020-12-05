@@ -1,11 +1,7 @@
 <template>
-  <div class="flex flex-col items-center justify-center">
-    <div
-      data-v-ceadf504=""
-      class="header h-80 w-screen flex items-center justify-center"
-    >
+  <div class="flex flex-col items-center justify-center pb-10">
+    <div class="header h-80 w-screen flex items-center justify-center">
       <h1
-        data-v-ceadf504=""
         class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
       >
         Our Story
