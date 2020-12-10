@@ -8,24 +8,24 @@
       </h1>
     </div>
     <div class="carousel">
-      <carousel :perPage="1" :autoplay="true" :loop="true" :centerMode="true">
+      <carousel :perPage="1" :autoplay="true" :loop="true" :centerMode="true" :adjustableHeight="false">
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image1.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image1.jpg" alt="" />
         </slide>
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image2.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image2.jpg" alt="" />
         </slide>
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image3.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image3.jpg" alt="" />
         </slide>
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image4.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image4.jpg" alt="" />
         </slide>
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image5.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image5.jpg" alt="" />
         </slide>
         <slide>
-          <img class="h-auro inline" src="@/assets/images/image6.jpg" alt="" />
+          <img class="inline" src="@/assets/images/image6.jpg" alt="" />
         </slide>
       </carousel>
     </div>
@@ -82,16 +82,19 @@
         lives in the United States.
       </p>
     </div>
+    <Donate />
   </div>
 </template>
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
+import Donate from "@/components/Donate";
 export default {
   name: "About",
   components: {
     Carousel,
-    Slide
+    Slide,
+    Donate
   }
 };
 </script>

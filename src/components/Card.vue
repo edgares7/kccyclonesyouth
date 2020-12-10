@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="m-5">
     <div class="w-80 rounded-lg overflow-hidden shadow-lg bg-white">
       <div
         class="relative z-10"

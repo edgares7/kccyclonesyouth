@@ -86,11 +86,16 @@
             </router-link>
           </nav>
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <button
-              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white donate"
+            <a
+              href="https://www.gofundme.com/f/refugee-soccer-transport-amp-expansion?fbclid=IwAR0cQT7eLFc5sa2-ivFL-nyM_tWYjdQ7cYv5T698XIgnq-LCXvOF7rNQ1vk"
+              target="_blank"
             >
-              Donate
-            </button>
+              <button
+                class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white donate"
+              >
+                Donate
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -208,6 +213,8 @@
               <div>
                 <a
                   class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white donate"
+                  href="https://www.gofundme.com/f/refugee-soccer-transport-amp-expansion?fbclid=IwAR0cQT7eLFc5sa2-ivFL-nyM_tWYjdQ7cYv5T698XIgnq-LCXvOF7rNQ1vk"
+                  target="_blank"
                 >
                   Donate
                 </a>

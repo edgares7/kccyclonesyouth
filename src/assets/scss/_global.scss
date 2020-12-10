@@ -1,0 +1,12 @@
+.VueCarousel-slide-adjustableHeight {
+  display: block !important;
+}
+.VueCarousel-inner {
+  align-items: flex-start !important;
+}
+
+.VueCarousel-slide {
+  visibility: visible;
+  flex-basis: 100%!important;
+  width: 100%;
+}

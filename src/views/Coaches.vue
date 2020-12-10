@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center mb-10">
+  <div class="flex flex-col items-center justify-center">
     <div class="header h-80 w-screen flex items-center justify-center">
       <h1
         class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
@@ -39,15 +39,18 @@
         />
       </router-link>
     </div>
+    <Donate />
   </div>
 </template>
 
 <script>
 import Card from "@/components/Card";
+import Donate from "@/components/Donate";
 export default {
   name: "Coaches",
   components: {
-    Card
+    Card,
+    Donate
   }
 };
 </script>

@@ -52,8 +52,9 @@
             >
               <div class="rounded-md shadow">
                 <a
-                  href="#"
+                  href="https://www.gofundme.com/f/refugee-soccer-transport-amp-expansion?fbclid=IwAR0cQT7eLFc5sa2-ivFL-nyM_tWYjdQ7cYv5T698XIgnq-LCXvOF7rNQ1vk"
                   class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white donate md:py-4 md:text-lg md:px-10"
+                  target="_blank"
                 >
                   Donate
                 </a>
