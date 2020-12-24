@@ -8,26 +8,30 @@
       </h1>
     </div>
     <div class="carousel">
-      <carousel :perPage="1" :autoplay="true" :loop="true" :centerMode="true" :adjustableHeight="false">
-        <slide>
-          <img class="inline" src="@/assets/images/image1.jpg" alt="" />
-        </slide>
-        <slide>
-          <img class="inline" src="@/assets/images/image2.jpg" alt="" />
-        </slide>
-        <slide>
-          <img class="inline" src="@/assets/images/image3.jpg" alt="" />
-        </slide>
-        <slide>
-          <img class="inline" src="@/assets/images/image4.jpg" alt="" />
-        </slide>
-        <slide>
-          <img class="inline" src="@/assets/images/image5.jpg" alt="" />
-        </slide>
-        <slide>
-          <img class="inline" src="@/assets/images/image6.jpg" alt="" />
-        </slide>
-      </carousel>
+      <agile
+        :slidesToShow="1"
+        :autoplay="true"
+        :infinite="true"
+        :autoplaySpeed="7000"
+        :fade="true"
+        style="width:500px"
+      >
+        <div v-for="(slide, i) in slides" :key="i">
+          <img :src="slide.image" :alt="slide.title" />
+        </div>
+        <template slot="prevButton"
+          ><img
+            class="carousel-nav"
+            src="@/assets/images/arrow-left.png"
+            alt="carousel arrow left image"
+        /></template>
+        <template slot="nextButton"
+          ><img
+            class="carousel-nav"
+            src="@/assets/images/arrow-right.png"
+            alt="carousel arrow right image"
+        /></template>
+      </agile>
     </div>
     <div class="lg:text-center pt-10">
       <p class="mt-4 max-w-4xl text-xl text-gray-500 lg:mx-auto">
@@ -87,14 +91,43 @@
 </template>
 
 <script>
-import { Carousel, Slide } from "vue-carousel";
+import { VueAgile } from "vue-agile";
 import Donate from "@/components/Donate";
 export default {
   name: "About",
+  data() {
+    return {
+      slides: [
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image1.jpg")
+        },
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image2.jpg")
+        },
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image3.jpg")
+        },
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image4.jpg")
+        },
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image5.jpg")
+        },
+        {
+          title: "KC Cyclones Youth Image",
+          image: require("@/assets/images/image6.jpg")
+        }
+      ]
+    };
+  },
   components: {
-    Carousel,
-    Slide,
-    Donate
+    Donate,
+    agile: VueAgile
   }
 };
 </script>
@@ -102,5 +135,9 @@ export default {
 <style lang="scss" scoped>
 .carousel {
   max-width: 500px;
+}
+.carousel-nav {
+  filter: invert(28%);
+  height: 30px;
 }
 </style>
